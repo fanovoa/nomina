@@ -2,6 +2,7 @@
 package urve_nomina;
 
 import vista.*;
+import testing.*;
 
 /**
  *
@@ -21,10 +22,14 @@ public class URVE_Nomina {
         System.out.println("Fecha: 12 noviembre 2014.");
         
         // Creación e invocación de la ventana principal.
-        FormPrincipal FormPrincipal;
-        FormPrincipal = new FormPrincipal();
-        FormPrincipal.setVisible(true);
+//        FormPrincipal FormPrincipal;
+//        FormPrincipal = new FormPrincipal();
+//        FormPrincipal.setVisible(true);
         
+               
+        // conexion con la base de datos
+        testingConnectionDatabase form = new testingConnectionDatabase();
+        form.setVisible(true);
     }
     
 }
