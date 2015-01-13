@@ -94,9 +94,9 @@ public class testingConnectionDatabase extends javax.swing.JFrame {
             dBTable1.createControlPanel();
             dBTable1.connectDatabase(
                     "com.mysql.jdbc.Driver",
-                    "jdbc:mysql://tazachoncha.net/URVE_NOMINA",
-                    "ricardo" ,
-                    "Aprende34");
+                    "jdbc:mysql://url.to.database.or.IP/DATABASE_NAME",
+                    "username" ,
+                    "password");
             dBTable1.setSelectSql("select * from obra");
             dBTable1.refresh();
         } catch (SQLException ex) {
